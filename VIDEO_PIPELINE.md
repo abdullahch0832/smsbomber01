@@ -185,7 +185,7 @@ The edit alternates almost every shot: **clip → photo → clip → photo**.
 | **Photo motion** | Slow Ken Burns zoom-in on every still | ~46 photos, ~all zoom **in**; one zoom-out (comparison photo) |
 | **Clip motion** | Normal speed in story sections; **slow-motion** in the breakdown section | Slow-mo on ~13 clips in 5:30–8:00 |
 | **Arrows / circles** | Only in the intro (arrow + basketball graphic over a highlight) | 2 total |
-| **Transitions** | **Hard cuts only.** No whips, zooms, flashes or fades between shots | ~100 cuts |
+| **Transitions** | Mostly hard cuts (AI log of this older video). The newer video measured in §0.6.4b also uses cross-dissolves, dip-to-black, a pixelate transition and a watercolour wipe | ~100 cuts |
 | **SFX** | Whoosh on the first cut + an explosion/impact on "subscribe" in the intro | **2 in the whole video.** Zero after 0:08 |
 | **Music** | Upbeat hip-hop bed (intro/context) → **emotional piano** (childhood/backstory, 2:30–5:30) → **lo-fi hip-hop** (breakdown to end) | 3 moods, changes at chapter boundaries |
 | **Game audio** | Faint or muted under the voiceover. Never featured on its own | Clips are effectively silent visuals |
@@ -203,10 +203,82 @@ The edit alternates almost every shot: **clip → photo → clip → photo**.
 - Player's own Instagram/Weibo (childhood, training, photos with other players).
 - A commercial/documentary-style clip (player in the gym, tying shoes) used for the outro.
 
+#### 0.6.4b Exact ffmpeg measurement: second video (first 82.5s)
+
+The tables above come from an AI watching the video, so their timings are estimates.
+This one is **measured**: the first 82.5s of the newest Bronny James video
+(`AOJFfj-ijfc`, "單挑擊敗全明星後衛？！…Bronny James…", 1080p, 30fps) was downloaded and cut-detected with ffmpeg
+(per-frame scene score plus a 0.5s difference for dissolves), then checked by eye with a timestamped frame every 0.5s.
+
+**Shot list:**
+
+| Time | Length | Type | What's on screen | Transition in | Text on screen |
+|---|---|---|---|---|---|
+| 0.0–3.2 | ~0.4–0.6s each, ~6 shots | Game clips | Rapid dunk/drive montage, rim close-ups | Hard cuts | `人在家中躺 球技心中漲` (catchphrase) |
+| 3.2–4.9 | 1.7s | Game clip | Bronny driving | Hard cut | `大家好` → `我是做夢都在打球的澤北SG` |
+| 4.9–6.4 | 1.5s | Game clip | Dunk under the rim | Hard cut | same |
+| 6.4–8.5 | 2.1s | Game clip | Bronny (#9) vs Nets | Hard cut | **Big centre text** `訂閱頻道 一起變強！` + hand-drawn **arrow** pointing at the player |
+| 8.5–9.4 | 0.9s | **Graphic** | Animated **watercolour basketball** wipes across the screen | — | Subscribe text wipes off with it |
+| 9.4–16.0 | 6.6s | **Still photo** | Bronny (Lakers) + LeBron (76ers) studio photo; photo is not 16:9, so it sits on a **blurred, enlarged copy of itself** | Wipe | `看到眼前的這張照片` / `大家的第一反應是什麼呢` |
+| 16.0–22.0 | 6.0s | Video clip | LeBron and Bronny courtside, smiling | **Cross-dissolve ~0.5s** | `41歲的LeBron` / `和21歲的Bronny` |
+| 22.0–28.0 | 6.0s | Video clip | LeBron and Bronny standing at a game | Cross-dissolve | `曾被外界頻繁討論的「父子同台」` |
+| 28.0–31.2 | **3.2s** | Game clip | Lakers at Pacers | Hard cut | |
+| 31.2–34.4 | **3.2s** | Game clip | Lakers at Kings | Hard cut | |
+| 34.4–37.6 | **3.2s** | Game clip | Lakers at Clippers | Hard cut | |
+| 37.6–40.7 | **3.1s** | Game clip | Lakers home game | Hard cut | |
+| 40.7–45.0 | 4.3s | Video clip | Thanasis Antetokounmpo smiling (comparison player) | Hard cut | `比如出現像Thanasis那樣` |
+| 45.0–50.9 | 5.9s | Still photo | Bronny at press conference (slow zoom) | Cross-dissolve | `Bronny繼續留在了湖人` |
+| 50.9–56.3 | 5.4s | Still photo | Bronny holding the ball (slow zoom) | Hard cut | |
+| 56.3–61.0 | 4.7s | Still photo | Bronny smiling close-up | Cross-dissolve | |
+| 61.0–66.2 | 5.2s | Video clip | **Interview clip** of ex-NBA player Jason Williams (quote source) | Hard cut | `前NBA球員Jason Williams` / `甚至直言` |
+| 66.2–66.4 | 0.2s | — | **Dip to black** | | |
+| 66.4–69.6 | **3.2s** | Game clip | Lakers at Suns | | `而在近期的一次採訪中` |
+| 69.6–72.9 | **3.3s** | Game clip | Lakers home game | Hard cut | |
+| 72.9–76.2 | **3.3s** | Game clip | Lakers home game | Hard cut | |
+| 76.2–79.5 | **3.3s** | Game clip | Lakers at Hawks | Hard cut | |
+| 79.5–82.5 | 3.0s+ | **Graphic composite** | LeBron (76ers) big on the left + Bronny press conference + **circular picture-in-picture** of Bronny | **Pixelate/mosaic transition** | `對他的生涯發展` / `真的是好事嗎` |
+
+**Percentages for this sample:**
+
+| | Video clips | Still photos | Graphics |
+|---|---|---|---|
+| By shot count (~27 shots incl. intro montage) | ~78% (21) | ~15% (4) | ~7% (2) |
+| By shot count, body only (9.4s onward, 17 shots) | ~71% (12: 8 game + 4 candid/interview) | ~24% (4) | ~6% (1) |
+| By screen time (82.5s) | **~68%** (~56s) | **~27%** (~22.5s) | **~5%** (~4s) |
+
+**Clip lengths in this video:**
+- **Every game-highlight clip is 3.1–3.3 seconds.** That's 8 out of 8, so it looks deliberate. Our max-4s rule matches what they do now.
+- Candid/interview clips (no game action) run longer: 4.3–6.0s.
+- Still photos: 4.7–6.6s each, average ~5.6s.
+- Average shot in the body: ~4.3s. The intro montage averages under 1s per shot.
+
+**Text measured:**
+- **43 subtitle captions in 72.5s of narration** (9.4–82.5), so a new caption every **~1.7 seconds**.
+- Each caption is a short phrase of **4–14 characters**: one line, bottom-centre, white bold with dark outline. The screen is never without a subtitle while the narrator talks.
+- Speech rate ≈ **4.5 characters (or English words/numbers) per second** (328 units in 72.5s).
+- Big styled text appears only once (the subscribe call-to-action in the intro).
+- Constant elements: **yellow border frame** and **`澤北SG` badge top-left** (white text on a yellow tab) on 100% of frames.
+
+**Audio measured:**
+- Voice sits around **−17 dB**. In the pauses between sentences the level drops to **−37 to −48 dB**. So there's either a background music bed **~20–28 dB below the voice**, or near-silence. Either way, music is barely audible under the narration.
+- **Game audio is muted.** Highlight clips have no crowd or commentary audible.
+- No clear SFX hits after the intro. The intro has a possible impact sound when the subscribe text pops in (~6.7s). The audio level alone can't fully tell an SFX apart from music.
+
+**Script pattern in these 80 seconds (hook):**
+1. Show a striking image and ask the viewer: "Looking at this photo, what's your first reaction?"
+2. Answer it straight away ("obviously a composite photo") and drop the news: 41-year-old LeBron and 21-year-old Bronny will be on different teams.
+3. Structure it as `一方面… / 另一方面…` (on one hand… on the other…), then the twist `事實恰恰相反` ("actually, the exact opposite").
+4. Add authority: an ex-NBA player's quote, then Bronny's own quote ("can't wait to face LeBron on Christmas Day").
+5. Close the hook with the **thesis question** at ~78s: "So what's Bronny's situation next season? Is playing apart from his father really good for his career?"
+
+**What changed from the AI-estimated video above:** that one (an older video) was logged with hard cuts only and clips up to 13s.
+This newer one uses **dissolves, dip-to-black, a pixelate transition, a watercolour wipe, a circle picture-in-picture and blurred-background photos**,
+and keeps **every game clip at ~3.2s**. Treat this measured video as the current house style.
+
 #### 0.6.5 What this means for us
 
 - Their editing is **simple and cheap to repeat**: subtitles + alternating clips/photos + zooms + hard cuts + 3 music moods. The consistency matters more than effects.
-- Their clips run up to 13s. **Our rule is max 4s per clip** (see §6) to lower copyright risk, so we need more photos, slow-mo and graphics to fill the time.
+- In their newest video every game clip is ~3.2s (measured), and older videos ran clips up to 13s. **Our rule is max 4s per clip** (see §6) to lower copyright risk, so we need more photos, slow-mo and graphics to fill the time.
 - They barely use SFX, stat cards or graphics. That's where we can look **more polished** than them without much extra work.
 
 ### 0.6b Channel evolution: old vs middle vs new videos
