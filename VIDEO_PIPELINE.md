@@ -146,6 +146,23 @@ The AI estimates timings, so treat them as approximate (±1s).
 | 8:00–10:18 verdict + outro | 13 | 8 | 0 | ~5.5s | 12s (+18s end screen) | 0 |
 | **Total** | **~56 clips** | **~46 photos** | **2** | **~6s** | **13s** | **2** |
 
+**Percentages (summed from the per-shot durations in the log):**
+
+| Measure | Video clips | Still photos | Graphics |
+|---|---|---|---|
+| By number of shots (~104) | **~54%** (56) | **~44%** (46) | ~2% (2, intro only) |
+| By screen time (618s) | **~51%** (~315s) | **~49%** (~304s, incl. 18s end-screen photo) | <1% |
+| Screen time without end screen | ~52% | ~48% | — |
+
+| Section | Clip time | Photo time | Note |
+|---|---|---|---|
+| 0:00–2:30 intro + context | ~76s (51%) | ~74s (49%) | Fast clips in the first 8s |
+| 2:30–5:30 backstory | ~84s (47%) | ~96s (53%) | More photos: childhood, college, personal |
+| 5:30–8:00 skill breakdown | ~78s (52%) | ~72s (48%) | Clips in slow motion |
+| 8:00–10:18 verdict + outro | ~77s (55%) | ~62s (45%) | Ends on 18s still |
+
+Average clip ≈ 5.6s, average photo ≈ 6.6s. ~40% of their clips are longer than 4s, so under our 4s rule those become two shorter clips or a clip + photo.
+
 So a 10-minute video uses **~100 shots: about 55% video clips and 45% still photos.** That's roughly one new shot every 6 seconds.
 For a 25-minute video in the same style you'd need **~250 shots (~140 clips + ~110 photos)**.
 
