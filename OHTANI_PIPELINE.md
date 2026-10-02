@@ -122,7 +122,71 @@ The views have a **huge subscriber-to-view ratio** (20.5M views on 21.6K subs). 
 - **Length:** 53–99 Japanese characters (median 71).
 - **Newest variant (2026):** puts a short quote right in the title (`「この二人は面倒だよ」`) and asks for the "real reason" (“本当の理由”). This variant produced the latest outlier.
 
-### 1.4 Script structure (measured from 3 transcripts)
+### 1.3b Title evolution (oldest 30 vs outliers vs newest 30)
+
+| Period | Title style | Views |
+|---|---|---|
+| **First ~30 videos (spring 2025)** | `…“ある発言”がヤバすぎる…米メディアが明かした内容とは` ("…X's certain remark is crazy… what US media revealed"), `“本当の理由”` ("the real reason"), `涙が止まらない` ("can't stop crying"); 12–15 min | **15 to 2,100 views.** Almost everything flopped |
+| **Breakthrough (mid 2025 →)** | `[big moment]直後に[name]が放った“胸を打つ発言”を米メディアの取材で明かし感涙 レジェンドら驚嘆` + a dramatic real event (revenge HBP, milestone HR, Kershaw's farewell, postseason) | 22K → **369K–690K** |
+| **Now (Sep 2026)** | `[name]が放った“まさかの第一声 / 本音”を米メディアの取材で明かし驚愕`, plus the new "short quote in 「」 + “本当の理由”" variant; 20–25 min | Mostly 10K–90K; the argument story hit 190K–216K |
+
+**Lesson:**
+- The same formula only explodes when the **real event underneath is big and emotional**: a fight or HBP, a farewell, a milestone, the postseason.
+- Vague teasers ("a certain remark is crazy") without a big event got almost no views.
+
+### 1.4 Script structure (measured from 6 transcripts)
+
+> The channel has used **two different script formats**. All of its 600K+ hits used **Format A**.
+
+**Format A: "documentary narrative" (2025; every 600K+ video)**
+
+Measured on `BThfQRMg-SM` (16:27, 11.4x), `39pqPFZhg0k` (14:30, 10.3x) and `ugpJrnU7K5I` (16:56, 5.4x).
+
+- **Speed:** ~5.3 chars/sec.
+- **Questions:** 0–2 in the whole video. It's told like a story, not an interview.
+
+| Block | Time (example: BThfQRMg-SM) | What happens |
+|---|---|---|
+| 1. Cold-open quote | 0:00–0:02 | One emotional first-person line: "The whole family cried." / "That was an abnormal way to get angry." / "My girlfriend cried." |
+| 2. Greeting + title read | 0:02–0:16 | "Hello everyone. Today's topic is [the full title]. Let's get started right away." |
+| 3. **Cinematic recap** | 0:16–2:30 | Scene-setting like a film: "Dodger Stadium was wrapped in a special atmosphere that day…". Inning by inning with numbers, building to *the moment* |
+| 4. Clubhouse scene | 2:30 | "After the game, in the quiet clubhouse, [name] appeared… as reporters held out their microphones, he slowly opened his mouth." |
+| 5. **Speaker 1** (the emotional centre, e.g. Kershaw) | 2:30–8:00 | Quote → narrator stage direction ("his voice trembled slightly", "he wiped tears with his finger") → quote. Repeated, building to a final line |
+| 6. **Speaker 2** (Ohtani) | 8:00–10:10 | Same pattern; Ohtani's quotes are humble and thankful |
+| 7. **Speaker 3** (`さらに…`, e.g. interpreter or trainer) | 10:10–12:10 | The "insider who saw it up close" |
+| 8. **Speaker 4** (manager Roberts) | 12:10–13:30 | Authority view |
+| 9. **Legend** (a broadcaster/ex-player such as John Smoltz or Alex Rodriguez) | 13:30–15:30 | "Even he, with tears in his eyes, squeezed out the words…" |
+| 10. **"Overseas reactions"** | 15:30–16:00 | `海外では…との声が寄せられています` ("Overseas, people are saying…") + 5–8 short fan comments |
+| 11. Fixed outro | 16:05–16:27 | "Keep watching Ohtani and the Dodgers. That's today's news. Thanks for watching to the end. Please subscribe and like. See you in the next video." |
+
+- **Link words between speakers:** `さらに` (furthermore), `そして` (and then), `一方` (meanwhile), `試合後、…` (after the game…).
+- Some videos add a **social-media ending**: "About an hour after the game, Ohtani quietly posted one photo on Instagram…".
+
+**Format B: "Q&A interview" (2026)**
+
+Measured on `svbPHJxnwFs` (25:40, 10.2x), `sKIlxzBPXdc` (20:42, 3.6x) and `jAVrbpAP7-o` (22:51, below average).
+
+- **Speed:** ~5.8–6.6 chars/sec (faster).
+- **Questions:** 28–36 per video. Answers are a median of ~190–250 characters (~35–45s).
+
+| Block | Time (example: sKIlxzBPXdc) | What happens |
+|---|---|---|
+| 1. Cold-open quote | 0:00–0:05 | Casual first-person line, often a teaser: "Shohei, that one line bothered me. I feel he's still hiding something." |
+| 2. **Short recap** | 0:05–0:45 | 40–60s only: the key numbers of the game |
+| 3. **Double question hook** | ~0:45 | "So what did Ohtani say back? And why did that one line make the coach see a different side of Ohtani for the postseason?" |
+| 4. **Speaker 1** | 0:45–6:20 | Introduced in one line: `試合後、[name]は[angle]を振り返り…語りました` ("after the game, X looked back on…"). Then 6–10 question → answer pairs |
+| 5. **Speaker 2** (`一方、…`) | 6:20–14:50 | Same Q&A pattern, a different angle (e.g. "he watched what happened *after* their talk") |
+| 6. **Speaker 3** (`最後に、…`) | 14:50–20:20 | Same pattern; often the most senior player (Betts, Freeman) |
+| 7. Outro | last 15s | A question to viewers ("How do you see these two? Tell us in the comments") + like/subscribe |
+
+- 3 speakers in 20 min, or **5 speakers in 25 min** (svbPHJxnwFs: Betts → Robleski → Freeman → Cole → Muncy, 3–8 min each).
+- No greeting, no legend block, no "overseas reactions" block.
+
+**Which format to use:**
+- **Format A** for big emotional events: farewells, fights, milestones, the postseason.
+- **Format B** only when there's a lot of real press-conference material (several players gave long answers).
+
+### 1.4a Old notes from the first 3 transcripts
 
 **Speed:** 5.3–6.6 Japanese characters per second (fast, news-reader pace). A 20-minute script is ~6,500–8,000 Japanese characters.
 
