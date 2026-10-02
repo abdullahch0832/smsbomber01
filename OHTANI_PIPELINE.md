@@ -328,10 +328,41 @@ The niche is crowded with templated Ohtani channels. **Being the trustworthy one
 
 ## PART 2 — Our production spec
 
+### 2.0 Decisions (fixed)
+
+- **Language = JAPANESE**, the same as the competitor: voice, subtitles, title, description and tags all in Japanese.
+- **Follow the 2026 format** (the current trend): Format B "Q&A interview" script (Part 1.4), the 2026 title formula (2.0a below), 20–25 min length.
+- Same structure, pacing and tone as the competitor, built on real quotes (Part 0).
+
+### 2.0a 2026 title data (60 titles, Aug–Oct 2026, median 38K views)
+
+| Title feature | Median views WITH it | Median views WITHOUT it |
+|---|---|---|
+| Short real quote in `「…」` in the title | **75K** (n=3) | 35K |
+| **Teammates talking ABOUT Ohtani** (`…をみた/見た○○らが放った`) | **59K** | 34K |
+| A home-run number (`29号`, `30号`) | **65.5K** | 34K |
+| Conflict or emotion word (`言い合い`, `激怒`, `不振`, `苦しむ`, `涙`) | 44K | 34.5K |
+| `本音` (true feelings) | 44.5K | 34K |
+| `第一声` (first words) | 33K | 45K |
+| Ohtani himself as the speaker (`大谷が放った`) | 34K | 50K |
+| Ending `感涙` vs `驚愕` | 44K vs 35K | — |
+
+**Top 2026 titles (copy this shape):**
+1. 216K: `【大谷翔平】降板後の山本由伸との言い合いを見たスネル投手が苦笑「この二人は面倒だよ」ベッツ選手らが明かした“本当の理由”に驚愕`
+2. 190K: `【大谷翔平】復帰戦で山本由伸投手とまさかの言い合い…降板直後、互いに譲らなかった“本音”をプライアー投手コーチが明かし驚愕`
+3. 186K: `【大谷翔平】大不振で苦しむタッカー選手の決勝打直後に大谷がとった“まさかの行動”に涙した理由を米メディアの取材で明かし感涙`
+4. 155K: `【大谷翔平】29号弾をキャッチしたハート投手に大谷が放った“まさかの第一声”を米メディアの取材で明かし感涙`
+5. 133K: `【大谷翔平】2試合連発の特大30号弾をみた新加入のスクーバル投手らが放った“まさかの本音”を米メディアの取材で明かし驚愕`
+
+**2026 title template for us (Japanese, ~60–80 characters):**
+`【大谷翔平】[conflict / milestone / struggling teammate + number]…[名前]が[苦笑/語った]「[real short quote]」[他の選手]らが明かした“本当の理由 / 本音”に[驚愕/感涙]`
+
+Use real quotes only in `「」`. Name the real source if we mention one ("会見で" = at the press conference). Don't write `米メディアの取材で` unless it really was a US media interview.
+
 ### 2.1 Config (fill once)
 
 ```
-LANGUAGE       = Japanese | English | Urdu | Hindi …   (competitor = Japanese; English titles also work)
+LANGUAGE       = Japanese (fixed — same as competitor)
 MAIN_SUBJECT   = Shohei Ohtani + Dodgers (or another star with a huge fan base)
 CHANNEL_NAME   = <brand>       NARRATOR_STYLE = calm news anchor, warm
 LENGTH         = 20–30 min (sweet spot 20–24 min)
