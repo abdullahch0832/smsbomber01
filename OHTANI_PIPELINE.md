@@ -206,6 +206,83 @@ Measured on `svbPHJxnwFs` (25:40, 10.2x), `sKIlxzBPXdc` (20:42, 3.6x) and `jAVrb
 - "Quotes" are casual first person, with humour ("my family tree keeps growing") and an emotional peak near the end of each answer.
 - Each speaker block ends on a quotable summary line.
 
+### 1.4b MEASURED: 2026 video frame by frame (ffmpeg) — `sKIlxzBPXdc`, first 4:14
+
+> **This is the current style to copy.** It was measured from the downloaded video:
+> - ffmpeg cut detection at 10 fps (subtitle zone ignored);
+> - every second checked by eye on timestamped contact sheets;
+> - motion inside each shot measured, to tell video from still photo;
+> - voice pitch per shot;
+> - loudness every 0.25s.
+
+**Shot list (19 shots in 254s):**
+
+| # | Time | Length | What's on screen | Type (measured) | Voice |
+|---|---|---|---|---|---|
+| 1 | 0.0–5.4 | 5.4s | Snell at the press-conference podium (NL Wild Card backdrop) | Real press video | **Player voice (deep, ~103 Hz)**: the cold-open quote |
+| 2 | 5.4–11.1 | 5.7s | **AI news anchor** (grey-haired man, suit, purple tie, studio with baseball-player silhouettes) | AI video | Narrator (~150 Hz) |
+| 3 | 11.1–16.5 | 5.4s | Ohtani and Yamamoto face to face in the dugout | **Still photo + slow zoom** | Narrator |
+| 4 | 16.5–19.8 | 3.3s | Snell at the podium | Real press video | Player voice |
+| 5 | 19.8–24.1 | 4.3s | Ohtani (#17) walking to bat | Real game video | Narrator |
+| 6 | 24.1–29.6 | 5.5s | Yamamoto pitching vs Padres | Game shot, slowed / slow zoom | Narrator |
+| 7 | 29.6–33.9 | 4.3s | Yamamoto at his locker (team-sponsor backdrop) | Real locker-room video | Narrator |
+| 8 | 33.9–38.0 | 4.1s | Dodger Stadium at night, wide | Stadium shot, slow move | Narrator |
+| 9 | 38.0–45.7 | 7.7s | AI anchor | AI video | Narrator: the "why?" bridge + first question |
+| 10 | 45.7–58.9 | 13.2s | Snell at the podium | Real press video | Player voice |
+| 11 | 58.9–72.0 | 13.1s | The same Ohtani–Yamamoto photo again | **Still photo + slow zoom (reused)** | Player voice |
+| 12 | 72.0–74.1 | 2.1s | Snell at the podium | Real press video | Player voice |
+| 13 | 74.1–77.2 | 3.1s | AI anchor | AI video | Narrator (asks the next question) |
+| 14 | 77.2–134.7 | **57.5s** | Snell, Yamamoto and teammates at spring training | **Still photo + very slow zoom** | Player voice |
+| 15 | 134.7–167.4 | 32.7s | Yamamoto smiling, Ohtani leaning in (dugout) | **Still photo + slow zoom** | Player voice (+ narrator question) |
+| 16 | 167.4–179.8 | 12.4s | Snell at the podium | Real press video | Player voice |
+| 17 | 179.8–223.2 | **43.4s** | Yamamoto pitching vs Padres (same shot as #6) | **Frozen frame + slow zoom** | Player voice |
+| 18 | 223.2–240.7 | 17.5s | Yamamoto close-up on the mound | **Still + slow zoom** | Player voice |
+| 19 | 240.7–254.5 | 13.8s+ | Ohtani batting | **Still + slow zoom** | Player voice |
+
+**Totals for 254s:**
+
+| By screen time | Share |
+|---|---|
+| **Still photos / frozen frames + slow zoom** | **~73%** (~186s, 7 shots) |
+| Real press-conference / locker video | ~16% (~41s, 6 shots) |
+| AI anchor | ~6.5% (~16.5s, 3 shots) |
+| Real moving game/stadium video | ~3.3% (~8.4s, 2 shots) |
+
+**Rhythm:**
+- 19 shots in 4:14, so an average of **13.4s per shot**.
+- The first 45s cut every ~4–6s.
+- After 1:17 the shots are 30–57s long: one picture while the "answer" plays.
+- Photos are **reused** (#3 = #11; #6 = #17).
+
+**What the measurement shows, element by element:**
+
+- **Language:** Japanese voice and Japanese subtitles on everything. Player names are written in katakana (スネル, ヨシノブ, 翔平).
+- **Frame/border:** **none.** Footage is full-screen 16:9. No logo, no watermark, no channel badge.
+  - An earlier AI watch reported a "blue frame with logos". Those were the sponsor logos on the press-conference backdrop, not a frame.
+- **Subtitles:**
+  - 100% of the time, bottom-centre, 1–2 lines.
+  - Bold Japanese gothic font, **white with a thick black outline**. Each subtitle stays up for the whole sentence (2–6s).
+  - The **cold-open quote (0:00–0:05) is in yellow** with a black outline. That's the only coloured subtitle in the sample.
+  - The interviewer's questions use the same white subtitles, ending in `？`.
+- **Other text:** **none.** No name plates, no titles, no stat cards, no chapter cards, no arrows or stickers.
+  - Speakers are only identified by the narrator saying their name.
+- **Voices: two AI voices.**
+  - **Narrator / interviewer:** median pitch ~150–185 Hz, a clear news voice. It also asks the questions.
+  - **"Player" voice:** deeper, ~95–117 Hz, casual first person. It "speaks" for Snell.
+  - The player voice is matched to real press-conference footage of that player.
+- **Transitions:** **hard cuts only.** No whoosh, fade or wipe was detected.
+- **SFX:** **none** detected.
+- **Music:**
+  - The overall level sits ~17 dB under the voice. Pauses drop to −42 to −50 dB (106 short gaps, 47.5s in total).
+  - So any music bed is **very quiet** and nearly disappears between sentences. Transcripts show `[音楽]` (music) marks ~13 times per video, i.e. short music stings between answers.
+- **Game audio:** muted (only narration and voice are heard).
+- **Motion:** every still photo has a **slow zoom-in** (Ken Burns). Long shots change only ~0.3–0.6 per frame, i.e. a barely visible drift.
+
+**What this means for production:**
+- The competitor's 2026 edit is **very cheap**: ~6 real press clips + 6–8 photos + 3 AI anchor shots per 4 minutes, all hard cuts.
+- The "value" is entirely in the **script and the voices**, not the editing.
+- Our edit can win easily with more visual variety: a new visual every 5–8s, real footage, name plates.
+
 ### 1.5 Editing style (AI watch of 2 videos)
 
 | Element | 2025 style (`BThfQRMg-SM`, 11.4x) | 2026 style (`sKIlxzBPXdc`, 3.6x) |
